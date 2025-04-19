@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 
-*{
-  @apply transition-all duration-500 font-[Ubuntu]
+* {
+  @apply transition-all duration-500 font-[Ubuntu];
 }
 
 @layer components{
@@ -31,7 +31,33 @@
   }
   
   .padding-x{
-    @apply px-8
+    @apply px-8 sm:px-32;
+  }
+  .padding-dx{
+    @apply px-8 sm:px-44;
+  }
+  .padding-y{
+    @apply py-12 sm:py-24;
+  }
+  .padding-l{
+    @apply pl-8 sm:pl-16;
+  }
+  .padding-r{
+    @apply pr-8 sm:pr-16;
+  }
+  .padding-t{
+    @apply pt-12 sm:pt-24;
+  }
+  .padding-b{
+    @apply pb-12 sm:pb-24;
   }
 
+}
+
+body{
+  background-color: #ffffff;
+}
+
+html{
+  scroll-behavior: smooth;
 }
